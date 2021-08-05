@@ -9,12 +9,11 @@ using namespace sdsl;
 using namespace std::chrono;
 int main()
 {
-auto start = high_resolution_clock::now();
- bit_vector b(156840240,0); // 156840240 chars in the given
-string.
-ifstream in("input.txt");
-char c;
-int i=0;
+   auto start = high_resolution_clock::now();
+   bit_vector b(156840240,0); // 156840240 chars in the given string.
+   ifstream in("input.txt");
+   char c;
+   int i=0;
 while(in.get(c))
 {
 if(c=='\n') continue;
